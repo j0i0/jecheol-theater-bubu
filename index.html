@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>연극 〈부부의 세상〉 모바일 초대장</title>
+<title>연극 〈부부의 세상〉 모바일 청첩장</title>
 <meta name="description" content="신랑 구만세 군 · 신부 변상애 양, 무대 위에서 백년가약을 맺습니다. 2026.11.14–15 중앙청소년문화의집 소공연장 B도로">
 
 <!-- 카톡 공유 미리보기 (주소가 바뀌면 아래 두 줄도 같이 바꿔주세요) -->
 <meta property="og:url" content="https://j0i0.github.io/jecheol-theater-bubu/">
 <meta property="og:image" content="https://j0i0.github.io/jecheol-theater-bubu/poster.jpg">
 <meta property="og:type" content="website">
-<meta property="og:title" content="연극 〈부부의 세상〉 초대장">
+<meta property="og:title" content="연극 〈부부의 세상〉 청첩장">
 <meta property="og:description" content="전석 무료 | 2026.11.14(토)–15(일) 오후 2시 · 저녁 6시 | 중앙청소년문화의집 소공연장 B도로">
 
 <script>document.documentElement.className += " js";</script>
@@ -111,7 +111,8 @@
   .ticket dd small{font-size:11.5px;opacity:.85}
   .ticket .admit{font-family:'Do Hyeon',sans-serif;font-size:15px;letter-spacing:.1em;writing-mode:vertical-rl;color:#fff6e8}
   .ticket .no{font-size:10px;margin-top:10px;color:#f5c48f;letter-spacing:.05em}
-  .ticket-note{font-size:12.5px;color:var(--ink-soft);margin-top:14px}
+  .ticket-note{font-size:12.5px;color:var(--ink-soft);margin-top:14px;line-height:1.7}
+  .ticket-note b{color:var(--red);font-size:14px}
 
   /* ---------- 일시 / 달력 ---------- */
   .date-big{font-family:'Do Hyeon',sans-serif;font-size:28px;color:var(--red);letter-spacing:.04em}
@@ -359,7 +360,7 @@
         <p class="admit">입장권</p>
       </div>
     </div>
-    <p class="ticket-note">이 화면이 곧 초대장입니다 🎟️</p>
+    <p class="ticket-note"><b>현장에서 티켓(식권)으로 교환하세요</b></p>
   </section>
 
   <!-- ========== 일시 ========== -->
@@ -533,7 +534,7 @@
         <dt>사진</dt><dd>이웅진 (미디어잡화점)</dd>
         <dt>홍보</dt><dd>정성훈</dd>
         <dt>모바일 티켓 제작</dt><dd>김지은</dd>
-        <dt>진행</dt><dd>김도형&nbsp;· 김민욱&nbsp;· 이민정&nbsp;· 한성희</dd>
+        <dt>진행</dt><dd>김도형&nbsp;· 김민욱&nbsp;· 이민정&nbsp;· 한성희&nbsp;· 김보영</dd>
         <dt>주최·주관</dt><dd>제철극장</dd>
       </dl>
     </div>
@@ -552,7 +553,7 @@
   <!-- ========== 공유 ========== -->
   <section class="reveal">
     <p class="label">SHARE</p>
-    <h2>초대장 전하기</h2>
+    <h2>청첩장 전하기</h2>
     <div class="share">
       <button type="button" id="shareBtn">📮 공유하기</button>
       <button type="button" id="linkBtn">🔗 링크 복사</button>
@@ -597,7 +598,7 @@ document.querySelectorAll('[data-copy]').forEach(btn=>{
 document.getElementById('linkBtn').addEventListener('click', ()=>copyText(location.href, '링크가 복사되었어요'));
 document.getElementById('shareBtn').addEventListener('click', ()=>{
   const data = {
-    title: '연극 〈부부의 세상〉 초대장',
+    title: '연극 〈부부의 세상〉 청첩장',
     text: '2026.11.14–15 중앙청소년문화의집 소공연장 B도로에서 만나요!',
     url: location.href
   };
